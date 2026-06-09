@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - VnoT Workspace</title>
+    <meta name="description" content="Privacy Policy for VnoT Workspace applications.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" style="text-decoration:none; color:inherit;">VnoT Workspace<span class="dot">.</span></a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <article class="legal-content">
+            <h1 class="legal-title">Privacy Policy</h1>
+            <p class="legal-updated">Last Updated: June 2026</p>
+
+            <section class="legal-section">
+                <h2>1. Introduction</h2>
+                <p>Welcome to VnoT Workspace. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our suite of applications, including TrustlessSign, AetherHR, Front RVM, ASPRI, Bio-Digital App, and VnotDrive.</p>
+                <p>By accessing or using any of the VnoT Workspace applications, you agree to the terms of this Privacy Policy.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>2. Information We Collect</h2>
+                <p>We may collect information about you in a variety of ways. The information we may collect via the Applications includes:</p>
+                <ul>
+                    <li><strong>Personal Data:</strong> Personally identifiable information, such as your name, email address, and demographic information that you voluntarily give to us when you register for the Applications or when you choose to participate in various activities related to the Applications (such as linking a Google Account for OAuth authentication).</li>
+                    <li><strong>Derivative Data:</strong> Information our servers automatically collect when you access the Applications, such as your IP address, your browser type, your operating system, your access times, and the pages you have viewed directly before and after accessing the Applications.</li>
+                    <li><strong>OAuth Data:</strong> If you choose to log in using Google, Facebook, or other third-party providers, we receive information from those providers strictly necessary to authenticate you (e.g., email address, basic profile info). We do not request or store passwords for these third-party accounts.</li>
+                </ul>
+            </section>
+
+            <section class="legal-section">
+                <h2>3. Use of Your Information</h2>
+                <p>Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Applications to:</p>
+                <ul>
+                    <li>Create and manage your account.</li>
+                    <li>Authenticate you across the VnoT Workspace ecosystem.</li>
+                    <li>Deliver targeted services, such as digital signatures (TrustlessSign) or HR management (AetherHR).</li>
+                    <li>Improve our applications and user experience.</li>
+                    <li>Respond to customer service requests and support needs.</li>
+                </ul>
+            </section>
+
+            <section class="legal-section">
+                <h2>4. Disclosure of Your Information</h2>
+                <p>We respect your privacy and are committed to protecting it. We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties except as necessary to provide the services you have requested, comply with the law, or protect our rights.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>5. Security of Your Information</h2>
+                <p>We use administrative, technical, and physical security measures (including Zero-Trust architectures in TrustlessSign and decentralized storage in VnotDrive) to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>6. Contact Us</h2>
+                <p>If you have questions or comments about this Privacy Policy, please contact us through our main portal at <a href="https://vnot.my.id">vnot.my.id</a>.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 VnoT Workspace. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html" class="footer-link" style="color:var(--text-primary); font-weight:600;">Privacy Policy</a>
+                <span class="footer-divider">&bull;</span>
+                <a href="terms.html" class="footer-link">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const sunIcon = document.querySelector('.sun-icon');
+        const moonIcon = document.querySelector('.moon-icon');
+        const htmlElement = document.documentElement;
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                htmlElement.setAttribute('data-theme', 'light');
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            } else {
+                htmlElement.setAttribute('data-theme', 'dark');
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
