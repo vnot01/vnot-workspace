@@ -12,62 +12,65 @@
     <header class="header">
         <div class="container header-container">
             <div class="logo">VnoT Workspace<span class="dot">.</span></div>
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
-                <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-            </button>
+            <div class="header-controls">
+                <select id="langSwitcher" class="lang-switcher" aria-label="Select Language"></select>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+            </div>
         </div>
     </header>
 
     <main class="main-content">
         <section class="hero container">
-            <h1 class="hero-title">Empowering the Future of Digital Work</h1>
-            <p class="hero-subtitle">VnoT Workspace is a unified ecosystem of applications spanning secure digital signatures, human resource management, computer vision research, personal assistance, and secure cloud storage. Our tools are built with a focus on privacy, security, and human-centric design.</p>
+            <h1 class="hero-title" data-i18n="hero.title">Empowering the Future of Digital Work</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">VnoT Workspace is a unified ecosystem of applications spanning secure digital signatures, human resource management, computer vision research, personal assistance, and secure cloud storage. Our tools are built with a focus on privacy, security, and human-centric design.</p>
         </section>
 
         <section class="apps-section container">
-            <h2 class="section-title">Our Applications</h2>
+            <h2 class="section-title" data-i18n="section.apps.title">Our Applications</h2>
             <div class="app-grid">
                 <!-- TrustlessSign -->
                 <div class="app-card">
                     <div class="app-icon" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">TS</div>
                     <h3 class="app-name">TrustlessSign</h3>
-                    <p class="app-desc">Zero-trust PDF digital signature platform ensuring document integrity and undisputed cryptographic verification.</p>
+                    <p class="app-desc" data-i18n="ts.desc">Zero-trust PDF digital signature platform ensuring document integrity and undisputed cryptographic verification.</p>
                 </div>
                 
                 <!-- AetherHR -->
                 <div class="app-card">
                     <div class="app-icon" style="background: linear-gradient(135deg, #10b981, #059669);">AH</div>
                     <h3 class="app-name">AetherHR</h3>
-                    <p class="app-desc">Next-generation Human Resource Management system designed to streamline employee data, attendance, and payroll operations.</p>
+                    <p class="app-desc" data-i18n="ah.desc">Next-generation Human Resource Management system designed to streamline employee data, attendance, and payroll operations.</p>
                 </div>
 
                 <!-- Front RVM -->
                 <div class="app-card">
                     <div class="app-icon" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">FR</div>
                     <h3 class="app-name">Front RVM</h3>
-                    <p class="app-desc">Advanced Research and Computer Vision Models focusing on zero-waste initiatives and sustainable engineering solutions.</p>
+                    <p class="app-desc" data-i18n="fr.desc">Advanced Research and Computer Vision Models focusing on zero-waste initiatives and sustainable engineering solutions.</p>
                 </div>
 
                 <!-- ASPRI -->
                 <div class="app-card">
                     <div class="app-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);">AS</div>
                     <h3 class="app-name">ASPRI</h3>
-                    <p class="app-desc">Your intelligent personal assistant application, leveraging AI to manage schedules, tasks, and daily workflows.</p>
+                    <p class="app-desc" data-i18n="as.desc">Your intelligent personal assistant application, leveraging AI to manage schedules, tasks, and daily workflows.</p>
                 </div>
 
                 <!-- Bio-Digital App -->
                 <div class="app-card">
                     <div class="app-icon" style="background: linear-gradient(135deg, #ec4899, #db2777);">BD</div>
                     <h3 class="app-name">Bio-Digital App</h3>
-                    <p class="app-desc">Pioneering interface for bio-digital data processing with an emphasis on low sensory load and circadian-synced UI.</p>
+                    <p class="app-desc" data-i18n="bd.desc">Pioneering interface for bio-digital data processing with an emphasis on low sensory load and circadian-synced UI.</p>
                 </div>
 
                 <!-- VnotDrive -->
                 <div class="app-card">
                     <div class="app-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7);">VD</div>
                     <h3 class="app-name">VnotDrive</h3>
-                    <p class="app-desc">Secure, scalable, and decentralized cloud storage solution to keep your most sensitive data safe and accessible.</p>
+                    <p class="app-desc" data-i18n="vd.desc">Secure, scalable, and decentralized cloud storage solution to keep your most sensitive data safe and accessible.</p>
                 </div>
             </div>
         </section>
@@ -75,34 +78,16 @@
 
     <footer class="footer">
         <div class="container footer-content">
-            <p class="copyright">&copy; 2026 VnoT Workspace. All rights reserved.</p>
+            <p class="copyright" data-i18n="footer.copyright">&copy; 2026 VnoT Workspace. All rights reserved.</p>
             <div class="footer-links">
-                <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                <a href="privacy.html" class="footer-link" data-i18n="footer.privacy">Privacy Policy</a>
                 <span class="footer-divider">&bull;</span>
-                <a href="terms.html" class="footer-link">Terms of Service</a>
+                <a href="terms.html" class="footer-link" data-i18n="footer.terms">Terms of Service</a>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Theme Toggle Logic
-        const themeToggle = document.getElementById('themeToggle');
-        const sunIcon = document.querySelector('.sun-icon');
-        const moonIcon = document.querySelector('.moon-icon');
-        const htmlElement = document.documentElement;
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = htmlElement.getAttribute('data-theme');
-            if (currentTheme === 'dark') {
-                htmlElement.setAttribute('data-theme', 'light');
-                sunIcon.style.display = 'none';
-                moonIcon.style.display = 'block';
-            } else {
-                htmlElement.setAttribute('data-theme', 'dark');
-                sunIcon.style.display = 'block';
-                moonIcon.style.display = 'none';
-            }
-        });
-    </script>
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
