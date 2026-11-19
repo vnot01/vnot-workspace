@@ -9,7 +9,9 @@ const translations = {
         "as.desc": "Your intelligent personal assistant application, leveraging AI to manage schedules, tasks, and daily workflows.",
         "bd.desc": "Pioneering interface for bio-digital data processing with an emphasis on low sensory load and circadian-synced UI.",
         "vd.desc": "Secure, scalable, and decentralized cloud storage solution to keep your most sensitive data safe and accessible.",
+        "nav.profile": "Creator Profile",
         "footer.copyright": "© 2026 VnoT Workspace. All rights reserved.",
+        "footer.profile": "Creator Profile",
         "footer.privacy": "Privacy Policy",
         "footer.terms": "Terms of Service"
     },
@@ -23,7 +25,9 @@ const translations = {
         "as.desc": "Aplikasi asisten pribadi cerdas Anda, memanfaatkan AI untuk mengelola jadwal, tugas, dan alur kerja harian.",
         "bd.desc": "Antarmuka perintis untuk pemrosesan data bio-digital dengan penekanan pada beban sensorik rendah dan UI yang disinkronkan dengan ritme sirkadian.",
         "vd.desc": "Solusi penyimpanan cloud yang aman, terukur, dan terdesentralisasi untuk menjaga data Anda yang paling sensitif tetap aman dan dapat diakses.",
+        "nav.profile": "Profil Kreator",
         "footer.copyright": "© 2026 VnoT Workspace. Hak Cipta Dilindungi Undang-Undang.",
+        "footer.profile": "Profil Kreator",
         "footer.privacy": "Kebijakan Privasi",
         "footer.terms": "Ketentuan Layanan"
     },
@@ -37,7 +41,9 @@ const translations = {
         "as.desc": "แอปพลิเคชันผู้ช่วยส่วนตัวอัจฉริยะของคุณ ใช้ประโยชน์จาก AI เพื่อจัดการตารางเวลา งาน และขั้นตอนการทำงานประจำวัน",
         "bd.desc": "อินเทอร์เฟซผู้บุกเบิกสำหรับการประมวลผลข้อมูลไบโอดิจิทัลโดยเน้นที่โหลดทางประสาทสัมผัสต่ำและ UI ที่ซิงค์กับจังหวะชีวิต",
         "vd.desc": "โซลูชันการจัดเก็บข้อมูลบนคลาวด์ที่ปลอดภัย ปรับขนาดได้ และกระจายศูนย์ เพื่อรักษาข้อมูลที่ละเอียดอ่อนที่สุดของคุณให้ปลอดภัยและเข้าถึงได้",
+        "nav.profile": "โปรไฟล์ผู้สร้าง",
         "footer.copyright": "© 2026 VnoT Workspace. สงวนลิขสิทธิ์",
+        "footer.profile": "โปรไฟล์ผู้สร้าง",
         "footer.privacy": "นโยบายความเป็นส่วนตัว",
         "footer.terms": "ข้อกำหนดในการให้บริการ"
     }

@@ -309,6 +309,27 @@ body {
     gap: 12px;
 }
 
+.nav-author-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 7px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    background: var(--glass-bg);
+    transition: all 0.2s ease;
+}
+
+.nav-author-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    transform: translateY(-1px);
+}
+
 .lang-switcher {
     appearance: none;
     -webkit-appearance: none;
