@@ -41,6 +41,12 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -312,22 +318,55 @@ body {
 .nav-author-link {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     font-size: 0.85rem;
     font-weight: 500;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     text-decoration: none;
-    padding: 7px 14px;
+    padding: 8px 16px;
     border-radius: 20px;
     border: 1px solid var(--border-color);
-    background: var(--glass-bg);
-    transition: all 0.2s ease;
+    background-color: rgba(0, 0, 0, 0.02);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    height: 38px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+[data-theme="dark"] .nav-author-link {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
 }
 
 .nav-author-link:hover {
     color: var(--accent);
     border-color: var(--accent);
+    background-color: rgba(59, 130, 246, 0.08);
     transform: translateY(-1px);
+}
+
+[data-theme="dark"] .nav-author-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-hover);
+    color: var(--accent-hover);
+}
+
+.nav-author-link:focus-visible {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+    outline: none;
+}
+
+.nav-author-link svg {
+    flex-shrink: 0;
+    opacity: 0.75;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav-author-link:hover svg {
+    opacity: 1;
+    transform: translate(1px, -1px);
 }
 
 .lang-switcher {
@@ -345,6 +384,8 @@ body {
     cursor: pointer;
     outline: none;
     transition: all 0.2s ease;
+    height: 38px;
+    box-sizing: border-box;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
     background-repeat: no-repeat;
     background-position: right 12px center;
